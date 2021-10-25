@@ -17,7 +17,9 @@ class Tableau1 extends Phaser.Scene{
         //ground (premier plan noir)
         this.load.image('gMid', 'assets/level/ground/g-mid.png');
         this.load.image('gRight', 'assets/level/ground/g-right.png');
-        this.load.image('gTree1', 'assets/level/ground/g-tree-1.png');
+        for (let t=1;t<=3;t++){
+            this.load.image('gTree't, 'assets/level/ground/g-tree-'+t+'.png');
+        }
         this.load.image('g-mushroom1', 'assets/level/ground/g-mushroom1.png');
         this.load.image('g-water', 'assets/level/ground/g-water.png');
         this.load.image('g-wooden-bridge', 'assets/level/ground/g-wooden-bridge.png');
