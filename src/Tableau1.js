@@ -42,6 +42,7 @@ class Tableau1 extends Phaser.Scene{
        // this.load.image('filterFilm3', 'assets/level/filters/film/frame-3.png');
 
         //texture au fond  TODO élève : faire une boucle pour charger les 3 images et démontrer par la même que vous savez aller au plus simple
+        for(let )
         this.load.image('bg-animation-a', 'assets/level/background-2/bg-animation/bg-animation-a.png');
 
     }
@@ -106,9 +107,17 @@ class Tableau1 extends Phaser.Scene{
          * Arbre
          * @type {Phaser.GameObjects.Image}
          */
-        let tree1=this.add.image(300,350, 'gTree1').setOrigin(0,1);
+        let tree1=this.add.image(400,350, 'gTree1').setOrigin(0,1);
         tree1.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(tree1);
+
+        let tree2=this.add.image(300,350, 'gTree2').setOrigin(0,1);
+        tree2.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(tree2);
+
+        let tree3=this.add.image(200,350, 'gTree3').setOrigin(0,1);
+        tree3.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(tree3);
         /**
          * Terrain 1
          * @type {Phaser.GameObjects.Image}
@@ -140,6 +149,7 @@ class Tableau1 extends Phaser.Scene{
          */
         let grass2=this.add.tileSprite(0,370,gMid3.x+gMid3.width-40,50,'g-grass-3').setOrigin(0,1)
         this.groundContainer.add(grass2);
+
         /**
          * filtre type film au premier plan
          * @type {Phaser.GameObjects.Sprite}
