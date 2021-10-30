@@ -174,6 +174,24 @@ class Tableau1 extends Phaser.Scene{
         this.filterFilm.play('film');
 
         //TODO élève faire une animation du même genre que filter mais pour bgAnimationA
+        /**
+         * bgAnimation
+         * @type {Phaser.GameObjects.Sprite}
+         */
+        this.bgAnimation = this.add.sprite(0, 0, 'bg-animatin-1').setOrigin(0,0);
+        //animation de 3 images
+        this.anims.create({
+            key: 'animation',
+            frames: [
+                {key:'bg-animatin-1'},
+                {key:'bg-animatin-2'},
+                {key:'bg-animatin-3'},
+            ],
+            frameRate: 16,
+            repeat: -1
+        });
+        this.bgAnimation.play('film');
+
 
         //gestion du parallaxe
         /**
