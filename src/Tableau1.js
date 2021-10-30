@@ -119,7 +119,7 @@ class Tableau1 extends Phaser.Scene{
          * Champignon
          * @type {Phaser.GameObjects.Image}
          */
-        let mushroom1=this.add.image(200,350, 'g-mushroom1').setOrigin(0,1);
+        let mushroom1=this.add.image(200,340, 'g-mushroom1').setOrigin(0,1);
         //mushroom1.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(mushroom1);
         mushroom1.angle=5;
