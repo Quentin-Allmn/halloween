@@ -122,7 +122,7 @@ class Tableau1 extends Phaser.Scene{
         let mushroom1=this.add.image(200,350, 'g-mushroom1').setOrigin(0,1);
         //mushroom1.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(mushroom1);
-        mushroom1.angle=-5;
+        mushroom1.angle=5;
         /**
          * Terrain 1
          * @type {Phaser.GameObjects.Image}
@@ -142,6 +142,18 @@ class Tableau1 extends Phaser.Scene{
          */
         let gMid3=this.add.image(gMid2.x+gMid2.width,350, 'gRight').setOrigin(0,0);
         this.groundContainer.add(gMid3);
+        /**
+         * Eau
+         * @type {Phaser.GameObjects.Image}
+         */
+        let gwater=this.add.image(gMid3.x+gMid3.width,350, 'g-water').setOrigin(0,0);
+        this.groundContainer.add(gwater);
+        /**
+         * Eau
+         * @type {Phaser.GameObjects.Image}
+         */
+        let gMid4=this.add.image(gwater.x+gwater.width,350, 'gleft').setOrigin(0,0);
+        this.groundContainer.add(gMid4);
         /**
          * De l'herbe en textures qui se répète
          * @type {Phaser.GameObjects.TileSprite}
