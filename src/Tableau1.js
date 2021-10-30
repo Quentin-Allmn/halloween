@@ -41,7 +41,7 @@ class Tableau1 extends Phaser.Scene{
         for(let a=1;a<=3;a++){
             this.load.image('bg-animation-'+a, 'assets/level/background-2/bg-animation/bg-animation-'+a+'.png');
         }
-        this.load.image('bg-animation-a', 'assets/level/background-2/bg-animation/bg-animation-a.png');
+        //this.load.image('bg-animation-a', 'assets/level/background-2/bg-animation/bg-animation-a.png');
 
     }
 
@@ -121,7 +121,7 @@ class Tableau1 extends Phaser.Scene{
          * @type {Phaser.GameObjects.Image}
          */
         let mushroom1=this.add.image(200,350, 'g-mushroom1').setOrigin(0,1);
-        //tree1.setTintFill(0xFF0000); // pratique pour dbugger
+        //mushroom1.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(mushroom1);
         /**
          * Terrain 1
