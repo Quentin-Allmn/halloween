@@ -93,7 +93,6 @@ class Tableau1 extends Phaser.Scene{
          */
         let bg1Terrain3=this.add.image(-300,200, 'bg1-terrain-3').setOrigin(0,0);
         this.bg1Container.add(bg1Terrain3);
-
         //-------------ground (premier plan noir)---------------------------
 
         /**
@@ -123,6 +122,7 @@ class Tableau1 extends Phaser.Scene{
         let mushroom1=this.add.image(200,350, 'g-mushroom1').setOrigin(0,1);
         //mushroom1.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(mushroom1);
+        mushroom1.angle=-5;
         /**
          * Terrain 1
          * @type {Phaser.GameObjects.Image}
@@ -134,7 +134,7 @@ class Tableau1 extends Phaser.Scene{
          * Terrain 2
          * @type {Phaser.GameObjects.Image}
          */
-        let gMid2=this.add.image(gMid1.x+gMid1.width+1,350, 'gMid').setOrigin(0,0); //on rajoute 1 px pour l'exemple
+        let gMid2=this.add.image(gMid1.x+gMid1.width,350, 'gMid').setOrigin(0,0); //on rajoute 1 px pour l'exemple
         this.groundContainer.add(gMid2);
         /**
          * Terrain 3
