@@ -18,6 +18,7 @@ class Tableau1 extends Phaser.Scene{
         //ground (premier plan noir)
         this.load.image('gMid', 'assets/level/ground/g-mid.png');
         this.load.image('gRight', 'assets/level/ground/g-right.png');
+        this.load.image('gLeft', 'assets/level/ground/g-left.png');
         for (let t=1;t<=3;t++){
             this.load.image('gTree'+t, 'assets/level/ground/g-tree-'+t+'.png');
         }
@@ -149,10 +150,10 @@ class Tableau1 extends Phaser.Scene{
         let gwater=this.add.image(gMid3.x+gMid3.width,350, 'g-water').setOrigin(0,0);
         this.groundContainer.add(gwater);
         /**
-         * Eau
+         * Terrain 4
          * @type {Phaser.GameObjects.Image}
          */
-        let gMid4=this.add.image(gwater.x+gwater.width-10,350, 'gleft').setOrigin(0,0);
+        let gMid4=this.add.image(gwater.x+gwater.width-10,350, 'gLeft').setOrigin(0,0);
         this.groundContainer.add(gMid4);
         /**
          * De l'herbe en textures qui se répète
