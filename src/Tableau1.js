@@ -125,6 +125,12 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(mushroom1);
         mushroom1.angle=5;
         /**
+         * Caisse
+         * @type {phaser.GameObjects.Image}
+         */
+        let box=this.add.image(200,400, 'g-box-2').setOrigin(0,1);
+        this.groundContainer.add(box);
+        /**
          * Terrain 1
          * @type {Phaser.GameObjects.Image}
          */
