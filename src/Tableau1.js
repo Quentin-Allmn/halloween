@@ -105,22 +105,22 @@ class Tableau1 extends Phaser.Scene{
          * Arbre
          * @type {Phaser.GameObjects.Image}
          */
-        let tree1=this.add.image(920,380, 'gTree1').setOrigin(0,1);
+        let tree1=this.add.image(820,380, 'gTree1').setOrigin(0,1);
         //tree1.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(tree1);
 
-        let tree2=this.add.image(85,350, 'gTree2').setOrigin(0,1);
+        let tree2=this.add.image(65,350, 'gTree2').setOrigin(0,1);
        // tree2.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(tree2);
 
-        let tree3=this.add.image(292,350, 'gTree2').setOrigin(0,1);
+        let tree3=this.add.image(252,350, 'gTree2').setOrigin(0,1);
         //tree3.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(tree3);
         /**
          * Champignon
          * @type {Phaser.GameObjects.Image}
          */
-        let mushroom1=this.add.image(175,350, 'g-mushroom1').setOrigin(0,1);
+        let mushroom1=this.add.image(125,350, 'g-mushroom1').setOrigin(0,1);
         //mushroom1.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(mushroom1);
         mushroom1.angle=5;
@@ -128,7 +128,7 @@ class Tableau1 extends Phaser.Scene{
          * Caisse
          * @type {phaser.GameObjects.Image}
          */
-        let box=this.add.image(200,400, 'g-box-2').setOrigin(0,1);
+        let box=this.add.image(400,400, 'g-box-2').setOrigin(0,1);
         this.groundContainer.add(box);
         /**
          * Terrain 1
