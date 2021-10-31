@@ -120,7 +120,7 @@ class Tableau1 extends Phaser.Scene{
          * Champignon
          * @type {Phaser.GameObjects.Image}
          */
-        let mushroom1=this.add.image(200,340, 'g-mushroom1').setOrigin(0,1);
+        let mushroom1=this.add.image(200,400, 'g-mushroom1').setOrigin(0,1);
         //mushroom1.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(mushroom1);
         mushroom1.angle=5;
@@ -141,7 +141,7 @@ class Tableau1 extends Phaser.Scene{
          * Eau
          * @type {Phaser.GameObjects.Image}
          */
-        let gwater=this.add.image(gMid3.x+gMid3.width,300, 'g-water').setOrigin(0,0);
+        let gwater=this.add.image(gMid3.x+gMid3.width,4500, 'g-water').setOrigin(0,0);
         this.groundContainer.add(gwater);
         /**
          * Terrain 4
