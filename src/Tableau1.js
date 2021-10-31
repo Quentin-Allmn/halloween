@@ -141,7 +141,7 @@ class Tableau1 extends Phaser.Scene{
          * Eau
          * @type {Phaser.GameObjects.Image}
          */
-        let gwater=this.add.image(gMid3.x+gMid3.width,350, 'g-water').setOrigin(0,0);
+        let gwater=this.add.image(gMid3.x+gMid3.width,300, 'g-water').setOrigin(0,0);
         this.groundContainer.add(gwater);
         /**
          * Terrain 4
