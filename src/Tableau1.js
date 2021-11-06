@@ -76,7 +76,7 @@ class Tableau1 extends Phaser.Scene{
          */
         let bg2Terrain2=this.add.image(-100,100, 'bg2-terrain-2').setOrigin(0,0);
         this.bg2Container.add(bg2Terrain2);
-        let bg2Terrain1=this.add.image(800,100, 'bg2-terrain-1').setOrigin(0,0);
+        let bg2Terrain1=this.add.image(700,100, 'bg2-terrain-1').setOrigin(0,0);
         this.bg2Container.add(bg2Terrain1);
         /**
          * Arbre dans bg2
