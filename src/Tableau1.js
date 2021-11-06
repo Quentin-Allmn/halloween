@@ -140,6 +140,7 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(box);
         box.angle=10;
         box.scale=0.3;
+
         /**
          * Terrain 1
          * @type {Phaser.GameObjects.Image}
