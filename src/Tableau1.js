@@ -128,7 +128,7 @@ class Tableau1 extends Phaser.Scene{
          * Caisse
          * @type {phaser.GameObjects.Image}
          */
-        let box=this.add.image(400,400, 'g-box-2').setOrigin(0,1);
+        let box=this.add.image(400,300, 'g-box-2').setOrigin(0,1);
         this.groundContainer.add(box);
         box.angle=10;
         /**
@@ -154,7 +154,7 @@ class Tableau1 extends Phaser.Scene{
          * Pont
          * @type {Phaser.GameObjects.Image}
          */
-        let gbridge=this.add.image(gMid3.x+gMid3.width-10,300, 'g-wooden-bridge').setOrigin(0,0);
+        let gbridge=this.add.image(gMid3.x+gMid3.width-10,280, 'g-wooden-bridge').setOrigin(0,0);
         this.groundContainer.add(gbridge);
         /**
          * Terrain 4
