@@ -9,6 +9,7 @@ class Tableau1 extends Phaser.Scene{
     preload(){
         //bg 2 (tout au fond et très flou)
         this.load.image('bg2-terrain-2', 'assets/level/background-2/bg2-terrain-2.png');
+        this.load.image('bg2-terrain-1', 'assets/level/background-2/bg2-terrain-1.png');
         this.load.image('bg2-tree-2', 'assets/level/background-2/bg2-tree-2.png');
         this.load.image('bg2-tree-3', 'assets/level/background-2/bg2-tree-3.png');
 
