@@ -15,8 +15,10 @@ class Tableau1 extends Phaser.Scene{
 
         //bg 1 (gris légèrement flou)
         this.load.image('bg1-terrain-3', 'assets/level/background-1/bg-terrain-3.png');
+        this.load.image('bg1-terrain-4', 'assets/level/background-4/bg-terrain-3.png');
         this.load.image('bg1-tree-3', 'assets/level/background-1/bg-tree-3.png');
         this.load.image('bg1-tree-1', 'assets/level/background-1/bg-tree-1.png');
+        this.load.image('bg1-wooden-bridge', 'assets/level/background-1/bg-wooden-bridge.png');
 
         //ground (premier plan noir)
         this.load.image('gMid', 'assets/level/ground/g-mid.png');
@@ -50,6 +52,10 @@ class Tableau1 extends Phaser.Scene{
         // liannes
         for(let a=1;a<=3;a++){
             this.load.image('g-vine-'+a, 'assets/level/ground/g-vine-'+a+'.png');
+        }
+        // herbe bg1
+        for(let a=1;a<=5;a++){
+           this.load.image('bg-grass-'+a, 'assets/level/background-1/bg-grass-'+a+'.png');
 
         }
     }
