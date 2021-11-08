@@ -335,7 +335,16 @@ class Tableau1 extends Phaser.Scene{
          */
         let gMid8=this.add.image(gGrass6.x+gGrass6.width,380, 'gleft').setOrigin(0,0);
         this.groundContainer.add(gMid8);
-
+        /**
+         * Zombies
+         * @type {Phaser.GameObjects.Image}
+         */
+        let Zombie1=this.add.image(gMid7.x+gMid7.width,380, 'g-z-1').setOrigin(0,0);
+        this.groundContainer.add(Zombie1);
+        let Zombie2=this.add.image(gMid5.x+gMid5.width,380, 'g-z-1').setOrigin(0,0);
+        this.groundContainer.add(Zombie2);
+        let Zombie3=this.add.image(200,380, 'g-z-1').setOrigin(0,0);
+        this.groundContainer.add(Zombie3);
         /**
          * filtre type film au premier plan
          * @type {Phaser.GameObjects.Sprite}
