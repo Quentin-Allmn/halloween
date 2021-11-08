@@ -385,7 +385,7 @@ class Tableau1 extends Phaser.Scene{
          * bloodAnimation
          * @type {Phaser.GameObjects.Sprite}
          */
-        this.bloodAnimation = this.add.sprite(900, 0, 'filterBlood1').setOrigin(0,0);
+        this.bloodAnimation = this.add.sprite(960, 0, 'filterBlood1').setOrigin(0,0);
         //animation de 3 images
         this.anims.create({
             key: 'animation',
