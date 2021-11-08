@@ -141,15 +141,15 @@ class Tableau1 extends Phaser.Scene{
          * Terrains
          * @type {Phaser.GameObjects.Image}
          */
-        let bg1Terrain4=this.add.image(bg1Terrain1.x+bg1Terrain1.width,200, 'bg1-terrain-4').setOrigin(0,0);
+        let bg1Terrain4=this.add.image(bg1Terrain1.x+bg1Terrain1.width,250, 'bg1-terrain-4').setOrigin(0,0);
         this.bg1Container.add(bg1Terrain4);
-        let bg1Terrain2=this.add.image(bg1Terrain4.x+bg1Terrain4.width,200, 'bg1-terrain-1').setOrigin(0,0);
+        let bg1Terrain2=this.add.image(bg1Terrain4.x+bg1Terrain4.width,250, 'bg1-terrain-1').setOrigin(0,0);
         this.bg1Container.add(bg1Terrain2);
         /**
          * Pont
          * @type {Phaser.gameObject.Image}
          */
-        let bgBridge=this.add.image(800,100,'bg1-wooden-bridge').setOrigin(0,0);
+        let bgBridge=this.add.image(800,250,'bg1-wooden-bridge').setOrigin(0,0);
         this.bg1Container.add(bgBridge);
         /**
          * Arbres
