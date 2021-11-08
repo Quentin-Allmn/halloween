@@ -260,8 +260,6 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(gMid6);
         let gMid7=this.add.image(gMid6.x+gMid6.width,350, 'gRight').setOrigin(0,0);
         this.groundContainer.add(gMid7);
-        let gMid8=this.add.image(ggrass6.x+ggrass6.width,350, 'gRight').setOrigin(0,0);
-        this.groundContainer.add(gMid8);
         /**
          * Arbres
          * @type {Phaser.GameObjects.Image}
@@ -290,7 +288,8 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(gGrass5);
         let gGrass6=this.add.image(gGrass5.x+gGrass5.width,500, 'g-grass-5').setOrigin(0,0);
         this.groundContainer.add(gGrass6);
-
+        let gMid8=this.add.image(gGrass6.x+gGrass6.width,350, 'gRight').setOrigin(0,0);
+        this.groundContainer.add(gMid8);
 
         /**
          * filtre type film au premier plan
