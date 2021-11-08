@@ -69,6 +69,10 @@ class Tableau1 extends Phaser.Scene{
         for(let h=1;h<=3;h++){
             this.load.image('filterBlood'+h, 'assets/level/filters/bloody/frame'+h+'.png');
         }
+        //filtre snow
+        for(let h=1;h<=5;h++){
+            this.load.image('filterSnow'+h, 'assets/level/weather/snow/frame-'+h+'.png');
+        }
     }
 
     /**
@@ -401,7 +405,25 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1
         });
         this.bloodAnimation.play('blood');
-
+        /**
+         * SnowAnimation
+         * @type {Phaser.GameObjects.Sprite}
+         */
+        this.SnowAnimation = this.add.sprite(965, 0, 'filterSnow1').setOrigin(0,0);
+        //animation de 3 images
+        this.anims.create({
+            key: 'snow',
+            frames: [
+                {key:'filterSnow1'},
+                {key:'filterSnow2'},
+                {key:'filterSnow3'},
+                {key:'filterSnow4'},
+                {key:'filterSnow5'},
+            ],
+            frameRate: 16,
+            repeat: -1
+        });
+        this.bloodAnimation.play('snow');
 
         //gestion du parallaxe
         /**
