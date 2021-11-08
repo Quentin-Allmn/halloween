@@ -49,7 +49,7 @@ class Tableau1 extends Phaser.Scene{
 
         // liannes
         for(let a=1;a<=3;a++){
-            this.load.image('g-vine-'+a, 'assets/level/background-2/bg-animation/g-vine-'+a+'.png');
+            this.load.image('g-vine-'+a, 'assets/level/ground/g-vine-'+a+'.png');
 
         }
     }
