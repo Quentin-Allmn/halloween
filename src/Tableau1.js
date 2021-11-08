@@ -340,11 +340,11 @@ class Tableau1 extends Phaser.Scene{
          * Zombies
          * @type {Phaser.GameObjects.Image}
          */
-        let Zombie1=this.add.image(gMid7.x+gMid7.width,280, 'g-z-1').setOrigin(0,0);
+        let Zombie1=this.add.image(gMid7.x+gMid7.width,200, 'g-z-1').setOrigin(0,0);
         this.groundContainer.add(Zombie1);
-        let Zombie2=this.add.image(gMid5.x+gMid5.width,280, 'g-z-2').setOrigin(0,0);
+        let Zombie2=this.add.image(gMid5.x+gMid5.width,200, 'g-z-2').setOrigin(0,0);
         this.groundContainer.add(Zombie2);
-        let Zombie3=this.add.image(200,280, 'g-z-3').setOrigin(0,0);
+        let Zombie3=this.add.image(200,200, 'g-z-3').setOrigin(0,0);
         this.groundContainer.add(Zombie3);
         /**
          * filtre type film au premier plan
@@ -410,7 +410,7 @@ class Tableau1 extends Phaser.Scene{
         //initialise ce qui se passe avec le clavier
         this.initKeyboard();
         // Définit l'espace de déplacement de la caméra
-        this.cameras.main.setBounds(0, 0, 1675, 540);
+        this.cameras.main.setBounds(0, 0, 1800, 540);
         //définit à quelles vitesse se déplacent nos différents plans
         bgAnimationA.scrollFactorX=0;
         this.filterFilm.scrollFactorX=0;
