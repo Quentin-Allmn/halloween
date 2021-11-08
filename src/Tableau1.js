@@ -391,7 +391,7 @@ class Tableau1 extends Phaser.Scene{
         this.bloodAnimation = this.add.sprite(965, 0, 'filterBlood1').setOrigin(0,0);
         //animation de 3 images
         this.anims.create({
-            key: 'animation',
+            key: 'blood',
             frames: [
                 {key:'filterBlood1'},
                 {key:'filterBlood2'},
@@ -400,7 +400,7 @@ class Tableau1 extends Phaser.Scene{
             frameRate: 16,
             repeat: -1
         });
-        this.bloodAnimation.play('film');
+        this.bloodAnimation.play('blood');
 
 
         //gestion du parallaxe
