@@ -54,7 +54,7 @@ class Tableau1 extends Phaser.Scene{
             this.load.image('g-vine-'+a, 'assets/level/ground/g-vine-'+a+'.png');
         }
         // herbe bg1
-        for(let a=1;a<=5;a++){
+        for(let a=1;a<=4;a++){
            this.load.image('bg-grass-'+a, 'assets/level/background-1/bg-grass-'+a+'.png');
 
         }
