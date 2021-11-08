@@ -33,9 +33,9 @@ class Tableau1 extends Phaser.Scene{
         this.load.image('g-wooden-bridge', 'assets/level/ground/g-wooden-bridge.png');
         this.load.image('g-box-2', 'assets/level/ground/g-box-2.png');
         this.load.image('g-stone-3', 'assets/level/ground/g-stone-3.png');
-        this.load.image('g-z-2', 'assets/level/ground/z11.png');
+        this.load.image('g-z-1', 'assets/level/ground/z11.png');
         this.load.image('g-z-2', 'assets/level/ground/z4.png');
-        this.load.image('g-z-2', 'assets/level/ground/z13.png');
+        this.load.image('g-z-3', 'assets/level/ground/z13.png');
 
 
         //au lieu d'écrire 5 lignes quasi identiques, on charge l'herbe avec une boucle
