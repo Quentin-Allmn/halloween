@@ -32,6 +32,7 @@ class Tableau1 extends Phaser.Scene{
         this.load.image('g-wooden-bridge', 'assets/level/ground/g-wooden-bridge.png');
         this.load.image('g-box-2', 'assets/level/ground/g-box-2.png');
         this.load.image('g-stone-3', 'assets/level/ground/g-stone-3.png');
+        this.load.image('g-fallen-tree-1', 'assets/level/ground/g-fallen-tree-1.png');
 
         //au lieu d'écrire 5 lignes quasi identiques, on charge l'herbe avec une boucle
         // ALGO : ceci est une boucle
@@ -290,6 +291,14 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(gGrass6);
         let gMid8=this.add.image(gGrass6.x+gGrass6.width,350, 'gRight').setOrigin(0,0);
         this.groundContainer.add(gMid8);
+        /**
+         * Arbre penché
+         * @type {Phaser.GameObjects.Image}
+         */
+        let Ftree1=this.add.image(gMid6.x+gMid6.width+40,380, 'g-fallen-tree-1').setOrigin(0,1);
+        //tree3.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(Ftree1);
+        Ftrre1.angle=5;
 
         /**
          * filtre type film au premier plan
