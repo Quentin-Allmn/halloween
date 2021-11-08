@@ -155,9 +155,9 @@ class Tableau1 extends Phaser.Scene{
          * Arbres
          * @type {Phaser.GameObjects.Image}
          */
-        let bg1Tree1=this.add.image(bg1Terrain1.x+bg1Terrain1.width,50, 'bg1-terrain-4').setOrigin(0,0);
+        let bg1Tree1=this.add.image(bg1Terrain1.x+bg1Terrain1.width,50, 'bg1-tree-3').setOrigin(0,0);
         this.bg1Container.add(bg1Tree1);
-        let bg1Tree2=this.add.image(bg1Terrain4.x+bg1Terrain4.width,50, 'bg1-terrain-1').setOrigin(0,0);
+        let bg1Tree2=this.add.image(bg1Terrain4.x+bg1Terrain4.width,50, 'bg1-tree-1').setOrigin(0,0);
         this.bg1Container.add(bg1Tree2);
         //-------------ground (premier plan noir)---------------------------
 
