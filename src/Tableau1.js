@@ -101,6 +101,13 @@ class Tableau1 extends Phaser.Scene{
          */
         let bg1Terrain3=this.add.image(-400,200, 'bg1-terrain-3').setOrigin(0,0);
         this.bg1Container.add(bg1Terrain3);
+        /**
+         * Arbre
+         * @type {Phaser.GameObjects.Image}
+         */
+        let bgtree3=this.add.image(242,350, 'bg-Tree-3').setOrigin(0,1);
+        //tree3.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(bgtree3);
         //-------------ground (premier plan noir)---------------------------
 
         /**
