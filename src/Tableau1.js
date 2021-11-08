@@ -47,6 +47,10 @@ class Tableau1 extends Phaser.Scene{
         }
         //this.load.image('bg-animation-a', 'assets/level/background-2/bg-animation/bg-animation-a.png');
 
+        // liannes
+        for(let a=1;a<=3;a++){
+            this.load.image('g-vine-'+a, 'assets/level/background-2/bg-animation/g-vine-'+a+'.png');
+
     }
 
     /**
@@ -181,6 +185,11 @@ class Tableau1 extends Phaser.Scene{
          */
         let gMid4=this.add.image(gwater.x+gwater.width-10,350, 'gLeft').setOrigin(0,0);
         this.groundContainer.add(gMid4);
+        /**
+         * liannes
+         * @type {Phaser.GameObjects.Image}
+         */
+
         /**
          * De l'herbe en textures qui se répète
          * @type {Phaser.GameObjects.TileSprite}
