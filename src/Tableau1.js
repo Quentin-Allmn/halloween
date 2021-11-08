@@ -267,6 +267,12 @@ class Tableau1 extends Phaser.Scene{
         let tree4=this.add.image(gMid4.x+gMid4.width+40,380, 'gTree2').setOrigin(0,1);
         //tree3.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(tree4);
+        /**
+         * Pierre
+         * @type {Phaser.GameObjects.Image}
+         */
+        let stone3=this.add.image(gMid4.x+gMid4.width+40,380, 'g-stone-3').setOrigin(0,1);
+        this.groundContainer.add(stone3);
 
         /**
          * filtre type film au premier plan
