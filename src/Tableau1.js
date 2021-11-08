@@ -138,7 +138,7 @@ class Tableau1 extends Phaser.Scene{
          * Caisse
          * @type {phaser.GameObjects.Image}
          */
-        let box=this.add.image(450,300, 'g-box-2').setOrigin(0,1);
+        let box=this.add.image(450,340, 'g-box-2').setOrigin(0,1);
         this.groundContainer.add(box);
         box.angle=10;
         box.scale=0.6;
