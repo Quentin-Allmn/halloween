@@ -191,8 +191,8 @@ class Tableau1 extends Phaser.Scene{
          * @type {Phaser.GameObjects.Image}
          */
         let vine1=this.add.image(750,0, 'g-vine-1').setOrigin(0,1);
-            //tree3.setTintFill(0xFF0000); // pratique pour dbugger
-            this.groundContainer.add(vine1);
+        //tree3.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(vine1);
 
         let vine2=this.add.image(750,vine1.y+vine1.width, 'g-vine-2').setOrigin(0,1);
         //tree3.setTintFill(0xFF0000); // pratique pour dbugger
@@ -201,6 +201,18 @@ class Tableau1 extends Phaser.Scene{
         let vine3=this.add.image(750,vine2.y+vine2.width, 'g-vine-3').setOrigin(0,1);
         //tree3.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(vine3);
+
+        let vine4=this.add.image(750,vine3.y+vine3.width, 'g-vine-3').setOrigin(0,1);
+        //tree3.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(vine4);
+
+        let vine5=this.add.image(750,vine4.y+vine4.width, 'g-vine-2').setOrigin(0,1);
+        //tree3.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(vine3);
+
+        let vine6=this.add.image(750,vine5.y+vine5.width, 'g-vine-3').setOrigin(0,1);
+        //tree3.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(vine6);
         /**
          * De l'herbe en textures qui se répète
          * @type {Phaser.GameObjects.TileSprite}
