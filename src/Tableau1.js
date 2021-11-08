@@ -322,6 +322,8 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(gGrass5);
         let gGrass6=this.add.image(gGrass5.x+gGrass5.width,480, 'g-grass-5').setOrigin(0,0);
         this.groundContainer.add(gGrass6);
+        let gGrass7=this.add.image(gGrass6.x+gGrass6.width,480, 'g-grass-5').setOrigin(0,0);
+        this.groundContainer.add(gGrass7);
         /**
          * Arbre penché
          * @type {Phaser.GameObjects.Image}
@@ -334,7 +336,7 @@ class Tableau1 extends Phaser.Scene{
          * Terrains
          * @type {Phaser.GameObjects.Image}
          */
-        let gMid8=this.add.image(gGrass6.x+gGrass6.width,380, 'gLeft').setOrigin(0,0);
+        let gMid8=this.add.image(gGrass7.x+gGrass7.width,380, 'gLeft').setOrigin(0,0);
         this.groundContainer.add(gMid8);
         /**
          * Zombies
