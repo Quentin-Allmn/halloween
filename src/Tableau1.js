@@ -189,7 +189,17 @@ class Tableau1 extends Phaser.Scene{
          * liannes
          * @type {Phaser.GameObjects.Image}
          */
+        let vine1=this.add.image(750,0, 'g-vine-1').setOrigin(0,1);
+            //tree3.setTintFill(0xFF0000); // pratique pour dbugger
+            this.groundContainer.add(vine1);
 
+        let vine2=this.add.image(750,vine1.y+vine1.width, 'g-vine-2').setOrigin(0,1);
+        //tree3.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(vine2);
+
+        let vine3=this.add.image(750,vine2.y+vine2.width, 'g-vine-3').setOrigin(0,1);
+        //tree3.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(vine3);
         /**
          * De l'herbe en textures qui se répète
          * @type {Phaser.GameObjects.TileSprite}
