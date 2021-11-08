@@ -324,7 +324,7 @@ class Tableau1 extends Phaser.Scene{
          * Arbre penché
          * @type {Phaser.GameObjects.Image}
          */
-        let Ftree1=this.add.image(gMid6.x+gMid6.width+40,380, 'g-fallen-tree-1').setOrigin(0,1);
+        let Ftree1=this.add.image(gMid6.x+gMid6.width+60,380, 'g-fallen-tree-1').setOrigin(0,1);
         //tree3.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(Ftree1);
         Ftree1.angle=5;
