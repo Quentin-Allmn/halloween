@@ -304,7 +304,7 @@ class Tableau1 extends Phaser.Scene{
          * Pierre
          * @type {Phaser.GameObjects.Image}
          */
-        let stone3=this.add.image(gMid4.x+gMid4.width+40,350, 'g-stone-3').setOrigin(0,1);
+        let stone3=this.add.image(gMid4.x+gMid4.width+40,300, 'g-stone-3').setOrigin(0,1);
         this.groundContainer.add(stone3);
         /**
          * Champignon
