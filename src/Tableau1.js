@@ -51,6 +51,7 @@ class Tableau1 extends Phaser.Scene{
         for(let a=1;a<=3;a++){
             this.load.image('g-vine-'+a, 'assets/level/background-2/bg-animation/g-vine-'+a+'.png');
 
+        }
     }
 
     /**
