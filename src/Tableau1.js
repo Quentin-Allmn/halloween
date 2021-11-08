@@ -273,6 +273,14 @@ class Tableau1 extends Phaser.Scene{
          */
         let stone3=this.add.image(gMid4.x+gMid4.width+40,380, 'g-stone-3').setOrigin(0,1);
         this.groundContainer.add(stone3);
+        /**
+         * Champignon
+         * @type {Phaser.GameObjects.Image}
+         */
+        let mushroom2=this.add.image(gMid5.x+gMid5.width,350, 'g-mushroom1').setOrigin(0,1);
+        //mushroom1.setTintFill(0xFF0000); // pratique pour dbugger
+        this.groundContainer.add(mushroom2)
+
 
         /**
          * filtre type film au premier plan
