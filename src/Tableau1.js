@@ -166,7 +166,7 @@ class Tableau1 extends Phaser.Scene{
          * Pont
          * @type {Phaser.GameObjects.Image}
          */
-        let gbridge=this.add.image(gMid3.x+gMid3.width-30,280, 'g-wooden-bridge').setOrigin(0,0);
+        let gbridge=this.add.image(gMid3.x+gMid3.width-50,280, 'g-wooden-bridge').setOrigin(0,0);
         this.groundContainer.add(gbridge);
         /**
          * Terrain 4
@@ -187,6 +187,7 @@ class Tableau1 extends Phaser.Scene{
         let grass2=this.add.tileSprite(0,370,gMid3.x+gMid3.width-40,50,'g-grass-3').setOrigin(0,1)
         this.groundContainer.add(grass2);
 
+        // décor n°2
 
         /**
          * filtre type film au premier plan
