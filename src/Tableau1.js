@@ -289,7 +289,7 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(gGrass5);
         let gGrass6=this.add.image(gGrass5.x+gGrass5.width,500, 'g-grass-5').setOrigin(0,0);
         this.groundContainer.add(gGrass6);
-        let gMid8=this.add.image(gGrass6.x+gGrass6.width,350, 'gRight').setOrigin(0,0);
+        let gMid8=this.add.image(gGrass6.x+gGrass6.width+100,350, 'gleft').setOrigin(0,0);
         this.groundContainer.add(gMid8);
         /**
          * Arbre penché
