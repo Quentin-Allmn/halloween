@@ -301,7 +301,7 @@ class Tableau1 extends Phaser.Scene{
         let Ftree1=this.add.image(gMid6.x+gMid6.width+40,380, 'g-fallen-tree-1').setOrigin(0,1);
         //tree3.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(Ftree1);
-        Ftrre1.angle=5;
+        Ftree1.angle=5;
 
         /**
          * filtre type film au premier plan
