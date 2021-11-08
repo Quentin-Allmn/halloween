@@ -260,6 +260,8 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(gMid6);
         let gMid7=this.add.image(gMid6.x+gMid6.width,350, 'gRight').setOrigin(0,0);
         this.groundContainer.add(gMid7);
+        let gMid8=this.add.image(ggrass6.x+ggrass6.width,350, 'gRight').setOrigin(0,0);
+        this.groundContainer.add(gMid8);
         /**
          * Arbres
          * @type {Phaser.GameObjects.Image}
@@ -280,6 +282,14 @@ class Tableau1 extends Phaser.Scene{
         let mushroom2=this.add.image(gMid5.x+gMid5.width,350, 'g-mushroom1').setOrigin(0,1);
         //mushroom1.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(mushroom2)
+        /**
+         * herbes bas
+         * @type {Phaser.GameObjects.Image}
+         */
+        let ggrass5=this.add.image(gMid7.x+gMid7.width,350, 'g-grass-4').setOrigin(0,0);
+        this.groundContainer.add(gdrass5);
+        let ggrass6=this.add.image(gMid5.x+gMid5.width,350, 'g-grass-5').setOrigin(0,0);
+        this.groundContainer.add(ggrass6);
 
 
         /**
