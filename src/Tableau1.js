@@ -121,8 +121,8 @@ class Tableau1 extends Phaser.Scene{
          * Arbre
          * @type {Phaser.GameObjects.Image}
          */
-        let bgtree3=this.add.image(242,350, 'bg-tree-3').setOrigin(0,1);
-        this.bg1Container.add(bgtree3);
+       // let bgtree3=this.add.image(242,350, 'bg-tree-3').setOrigin(0,1);
+        //this.bg1Container.add(bgtree3);
 
         // decor2
         /**
