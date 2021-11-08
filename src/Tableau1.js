@@ -61,6 +61,10 @@ class Tableau1 extends Phaser.Scene{
            this.load.image('bg-grass-'+a, 'assets/level/background-1/bg-grass-'+a+'.png');
 
         }
+        //filtre blood
+        for(let h=1;h<=3;h++){
+            this.load.image('filterBlood'+h, 'assets/level/filters/bloody/frame-'+h+'.png');
+        }
     }
 
     /**
@@ -361,6 +365,11 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1
         });
         this.bgAnimation.play('film');
+        /**
+         * bloodAnimation
+         * @type {Phaser.GameObjects.Sprite}
+         */
+
 
 
         //gestion du parallaxe
