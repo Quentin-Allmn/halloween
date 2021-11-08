@@ -63,7 +63,7 @@ class Tableau1 extends Phaser.Scene{
         }
         //filtre blood
         for(let h=1;h<=3;h++){
-            this.load.image('filterBlood'+h, 'assets/level/filters/bloody/frame-'+h+'.png');
+            this.load.image('filterBlood'+h, 'assets/level/filters/bloody/frame'+h+'.png');
         }
     }
 
