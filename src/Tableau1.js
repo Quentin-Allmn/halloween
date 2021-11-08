@@ -172,7 +172,7 @@ class Tableau1 extends Phaser.Scene{
          * Terrain 4
          * @type {Phaser.GameObjects.Image}
          */
-        let gMid4=this.add.image(gwater.x+gwater.width-10,350, 'gLeft').setOrigin(0,0);
+        let gMid4=this.add.image(gwater.x+gwater.width-40,350, 'gLeft').setOrigin(0,0);
         this.groundContainer.add(gMid4);
         /**
          * De l'herbe en textures qui se répète
