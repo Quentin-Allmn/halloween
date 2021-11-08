@@ -285,9 +285,9 @@ class Tableau1 extends Phaser.Scene{
          * herbes bas
          * @type {Phaser.GameObjects.Image}
          */
-        let gGrass5=this.add.image(gMid7.x+gMid7.width,500, 'g-grass-4').setOrigin(0,0);
+        let gGrass5=this.add.image(gMid7.x+gMid7.width,480, 'g-grass-4').setOrigin(0,0);
         this.groundContainer.add(gGrass5);
-        let gGrass6=this.add.image(gGrass5.x+gGrass5.width,500, 'g-grass-5').setOrigin(0,0);
+        let gGrass6=this.add.image(gGrass5.x+gGrass5.width,480, 'g-grass-5').setOrigin(0,0);
         this.groundContainer.add(gGrass6);
         let gMid8=this.add.image(gGrass6.x+gGrass6.width+100,350, 'gleft').setOrigin(0,0);
         this.groundContainer.add(gMid8);
