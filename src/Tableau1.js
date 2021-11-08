@@ -71,7 +71,7 @@ class Tableau1 extends Phaser.Scene{
         }
         //filtre snow
         for(let h=1;h<=5;h++){
-            this.load.image('filterSnow'+h, 'assets/level/weather/snow/frame-'+h+'.png');
+            this.load.image('filterSnow'+h, 'assets/level/weather/snow/frame'+h+'.png');
         }
     }
 
