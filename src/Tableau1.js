@@ -318,8 +318,6 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(gGrass5);
         let gGrass6=this.add.image(gGrass5.x+gGrass5.width,480, 'g-grass-5').setOrigin(0,0);
         this.groundContainer.add(gGrass6);
-        let gMid8=this.add.image(gGrass6.x+gGrass6.width+100,350, 'gleft').setOrigin(0,0);
-        this.groundContainer.add(gMid8);
         /**
          * Arbre penché
          * @type {Phaser.GameObjects.Image}
@@ -328,6 +326,12 @@ class Tableau1 extends Phaser.Scene{
         //tree3.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(Ftree1);
         Ftree1.angle=5;
+        /**
+         * Terrains
+         * @type {Phaser.GameObjects.Image}
+         */
+        let gMid8=this.add.image(gGrass6.x+gGrass6.width+100,380, 'gleft').setOrigin(0,0);
+        this.groundContainer.add(gMid8);
 
         /**
          * filtre type film au premier plan
