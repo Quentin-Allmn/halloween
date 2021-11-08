@@ -122,7 +122,7 @@ class Tableau1 extends Phaser.Scene{
          * @type {Phaser.GameObjects.Image}
          */
         let bgtree3=this.add.image(242,350, 'bg-tree-3').setOrigin(0,1);
-        this.groundContainer.add(bgtree3);
+        this.bg1Container.add(bgtree3);
 
         // decor2
         /**
@@ -138,7 +138,7 @@ class Tableau1 extends Phaser.Scene{
          * @type {Phaser.gameObject.Image}
          */
         let bgBridge=this.add.image(bg1Terrain1.x+bg1Terrain1.width,200,'bg1-wooden-bridge').setOrigin(0,0);
-        this.groundContainer.add(bgBridge);
+        this.bg1Container.add(bgBridge);
         /**
          * Arbres
          * @type {Phaser.GameObjects.Image}
