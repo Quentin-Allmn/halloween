@@ -242,6 +242,10 @@ class Tableau1 extends Phaser.Scene{
 
         // décor n°2
 
+        // Backgrourd2
+
+
+
         /**
          * filtre type film au premier plan
          * @type {Phaser.GameObjects.Sprite}
