@@ -166,7 +166,7 @@ class Tableau1 extends Phaser.Scene{
          * Pont
          * @type {Phaser.GameObjects.Image}
          */
-        let gbridge=this.add.image(gMid3.x+gMid3.width-10,280, 'g-wooden-bridge').setOrigin(0,0);
+        let gbridge=this.add.image(gMid3.x+gMid3.width-30,280, 'g-wooden-bridge').setOrigin(0,0);
         this.groundContainer.add(gbridge);
         /**
          * Terrain 4
