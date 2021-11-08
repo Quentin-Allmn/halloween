@@ -330,7 +330,7 @@ class Tableau1 extends Phaser.Scene{
          * Terrains
          * @type {Phaser.GameObjects.Image}
          */
-        let gMid8=this.add.image(gGrass6.x+gGrass6.width+100,380, 'gleft').setOrigin(0,0);
+        let gMid8=this.add.image(gGrass6.x+gGrass6.width,380, 'gleft').setOrigin(0,0);
         this.groundContainer.add(gMid8);
 
         /**
