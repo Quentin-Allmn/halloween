@@ -243,7 +243,8 @@ class Tableau1 extends Phaser.Scene{
         // décor n°2
 
         // Backgrourd2
-
+        let gMid5=this.add.image(gMid4.x+gMid4.width,350, 'gRight').setOrigin(0,0);
+        this.groundContainer.add(gMid5);
 
 
         /**
