@@ -118,12 +118,12 @@ class Tableau1 extends Phaser.Scene{
         tree1.scale=0.7;
         tree1.angle=-0.5;
 
-        let tree2=this.add.image(65,300, 'gTree2').setOrigin(0,1);
+        let tree2=this.add.image(65,380, 'gTree2').setOrigin(0,1);
        // tree2.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(tree2);
         tree2.scale=0.7;
 
-        let tree3=this.add.image(252,300, 'gTree2').setOrigin(0,1);
+        let tree3=this.add.image(252,380, 'gTree2').setOrigin(0,1);
         //tree3.setTintFill(0xFF0000); // pratique pour dbugger
         this.groundContainer.add(tree3);
         /**
