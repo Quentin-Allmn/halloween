@@ -423,7 +423,7 @@ class Tableau1 extends Phaser.Scene{
             frameRate: 16,
             repeat: -1
         });
-        this.bloodAnimation.play('snow');
+        this.SnowAnimation.play('snow');
 
         //gestion du parallaxe
         /**
