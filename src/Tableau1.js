@@ -437,24 +437,25 @@ class Tableau1 extends Phaser.Scene{
 
         this.anims.create({
             key: 'animation',
-            frames: [
-                {key:'layer1'},
-                {key:'layer2'},
-                {key:'layer3'},
-                {key:'layer4'},
-                {key:'layer5'},
-                {key:'layer6'},
-                {key:'layer7'},
-                {key:'layer8'},
-                {key:'layer9'},
-                {key:'layer10'},
-            ],
+            frames: this.getFrames("layer",10),
             frameRate: 12,
             repeat: -1
         });
         this.idle.play('animation');
-
-
+        /**
+         * Renvoie un tableau d'images
+         * @param prefix
+         * @param length
+         * @returns {*[]}
+         */
+        getFrames(layer,10)
+        {
+            let frames = [];
+            for (let i = 1; i <= 10; i++) {
+                frames.push({key: prefix + i});
+            }
+            return frames;
+        }
         //gestion du parallaxe
         /**
          * Vitesse de déplacement du décor
