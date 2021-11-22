@@ -432,6 +432,15 @@ class Tableau1 extends Phaser.Scene{
          * AnimationIdle1
          * @type {Phaser.GameObjects.Sprite}
          */
+        getFrames(prefix,length)
+        {
+            let frames = [];
+            for (let i = 1; i <= lenght; i++) {
+                frames.push({key: prefix + i});
+            }
+            return frames;
+        }
+
         this.idle = this.add.sprite(0, 0, 'layer').setOrigin(0,0);
         //animation de idle1
         console.log(frames)
@@ -448,14 +457,7 @@ class Tableau1 extends Phaser.Scene{
          * @param length
          * @returns {*[]}
          */
-        getFrames(prefix,length)
-        {
-            let frames = [];
-            for (let i = 1; i <= 10; i++) {
-                frames.push({key: layer + i});
-            }
-            return frames;
-        }
+
         //gestion du parallaxe
         /**
          * Vitesse de déplacement du décor
