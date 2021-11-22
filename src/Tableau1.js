@@ -75,7 +75,7 @@ class Tableau1 extends Phaser.Scene{
         }
         //Charcter
         for (let t=1;t<=10;t++) {
-            this.load.image('layer' + t, 'assets/boy/boy_style_1/PNG/idle/Layer-' + t + '.png');
+            this.load.image('layer' + t, 'assets-characters/boy/boy_style_1/PNG/idle/Layer-' + t + '.png');
         }
     }
 
