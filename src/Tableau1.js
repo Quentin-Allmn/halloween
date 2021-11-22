@@ -90,7 +90,7 @@ class Tableau1 extends Phaser.Scene{
          * Fond très clair avec une trame
          * @type {Phaser.GameObjects.Sprite}
          */
-        let bgAnimationA=this.add.sprite(0,0, 'bg-animation-a').setOrigin(0,0);
+        //let bgAnimationA=this.add.sprite(0,0, 'bg-animation-a').setOrigin(0,0);
 
         //--------------background 2 (tout au fond et flou)--------------------
 
@@ -432,6 +432,16 @@ class Tableau1 extends Phaser.Scene{
          * AnimationIdle1
          * @type {Phaser.GameObjects.Sprite}
          */
+        this.idle = this.add.sprite(0, 0, 'layer').setOrigin(0,0);
+        //animation de idle1
+        console.log(frames)
+        this.anims.create({
+            key: 'animation',
+            frames: this.getFrames("layer",10),
+            frameRate: 12,
+            repeat: -1
+        });
+        this.idle.play('animation');
         /**
          * Renvoie un tableau d'images
          * @param prefix
@@ -446,30 +456,15 @@ class Tableau1 extends Phaser.Scene{
             }
             return frames;
         }
-
-        this.idle = this.add.sprite(0, 0, 'layer').setOrigin(0,0);
-        //animation de idle1
-        console.log(frames)
-        this.anims.create({
-            key: 'animation',
-            frames: this.getFrames("layer",10),
-            frameRate: 12,
-            repeat: -1
-        });
-        this.idle.play('animation');
-
         //gestion du parallaxe
-        /**
-         * Vitesse de déplacement du décor
-         * @type {number}
-         */
+
         this.speed=0;
         //initialise ce qui se passe avec le clavier
         this.initKeyboard();
         // Définit l'espace de déplacement de la caméra
         this.cameras.main.setBounds(0, 0, 1900, 540);
         //définit à quelles vitesse se déplacent nos différents plans
-        bgAnimationA.scrollFactorX=0;
+        this.bgAnimationA.scrollFactorX=0;
         this.filterFilm.scrollFactorX=0;
         this.bg2Container.scrollFactorX=0.2;
         this.bg1Container.scrollFactorX=0.4;
