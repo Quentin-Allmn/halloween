@@ -432,6 +432,12 @@ class Tableau1 extends Phaser.Scene{
          * AnimationIdle1
          * @type {Phaser.GameObjects.Sprite}
          */
+        /**
+         * Renvoie un tableau d'images
+         * @param prefix
+         * @param length
+         * @returns {*[]}
+         */
         getFrames(prefix,length)
         {
             let frames = [];
@@ -451,12 +457,6 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1
         });
         this.idle.play('animation');
-        /**
-         * Renvoie un tableau d'images
-         * @param prefix
-         * @param length
-         * @returns {*[]}
-         */
 
         //gestion du parallaxe
         /**
