@@ -448,11 +448,11 @@ class Tableau1 extends Phaser.Scene{
          * @param length
          * @returns {*[]}
          */
-        getFrames(layer,10)
+        getFrames(prefix,length)
         {
             let frames = [];
             for (let i = 1; i <= 10; i++) {
-                frames.push({key: prefix + i});
+                frames.push({key: layer + i});
             }
             return frames;
         }
