@@ -86,7 +86,7 @@ class Tableau1 extends Phaser.Scene {
             this.load.image('layer3-' + t, 'assets-characters/enemy-1/PNG/idle/Layer-' + t + '.png');
         }
         //enemy2
-        for (let t = 1; t <= 10; t++) {
+        for (let t = 1; t <= 6; t++) {
             this.load.image('layer4-' + t, 'assets-characters/enemy-2/PNG/idle/Layer-' + t + '.png');
         }
     }
@@ -469,7 +469,7 @@ class Tableau1 extends Phaser.Scene {
          * AnimationIdle2
          * @type {Phaser.GameObjects.Sprite}
          */
-        this.idle = this.add.sprite(0, 0, 'layer').setOrigin(0, 0);
+        this.idle = this.add.sprite(0, 0, 'layer2-').setOrigin(0, 0);
         //animation de idle1
 
         this.anims.create({
@@ -495,7 +495,7 @@ class Tableau1 extends Phaser.Scene {
          * AnimationIdle3
          * @type {Phaser.GameObjects.Sprite}
          */
-        this.idle = this.add.sprite(0, 0, 'layer').setOrigin(0, 0);
+        this.idle = this.add.sprite(0, 0, 'layer3-').setOrigin(0, 0);
         //animation de idle1
 
         this.anims.create({
@@ -520,7 +520,7 @@ class Tableau1 extends Phaser.Scene {
          * AnimationIdle4
          * @type {Phaser.GameObjects.Sprite}
          */
-        this.idle = this.add.sprite(0, 0, 'layer').setOrigin(0, 0);
+        this.idle = this.add.sprite(0, 0, 'layer4-').setOrigin(0, 0);
         //animation de idle1
 
         this.anims.create({
