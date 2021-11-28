@@ -536,8 +536,7 @@ class Tableau1 extends Phaser.Scene {
             frameRate: 12,
             repeat: -1
         });
-        this.idle.play('animation4');
-
+        this.idle.play('animation4')
 
 
         //gestion du parallaxe
