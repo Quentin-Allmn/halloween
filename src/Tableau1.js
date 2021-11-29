@@ -83,13 +83,15 @@ class Tableau1 extends Phaser.Scene{
         }
         //enemy1
         for (let i=1;i<=10;i++) {
-            this.load.image('layer3-' + i, 'assets-characters/boy/boy_style_1/PNG/idle/Layer-' + i + '.png');
+            this.load.image('layer3-' + i, 'assets-characters/enemy-1/PNG/idle/Layer-' + i + '.png');
         }
         //enemy2
         for (let i=1;i<=6;i++) {
-            this.load.image('layer4-' + i, 'assets-characters/boy/boy_style_1/PNG/idle/Layer-' + i + '.png');
+            this.load.image('layer4-' + i, 'assets-characters/enemy-2/PNG/idle/Layer-' + i + '.png');
         }
     }
+
+
 
     /**
      * Crée la scène
