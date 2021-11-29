@@ -410,7 +410,7 @@ class Tableau1 extends Phaser.Scene{
          * bloodAnimation
          * @type {Phaser.GameObjects.Sprite}
          */
-        this.bloodAnimation = this.add.sprite(965, 0, 'filterBlood1').setOrigin(0,0);
+        this.bloodAnimation = this.add.sprite(0, 0, 'filterBlood1').setOrigin(0,0);
         //animation de 3 images
         this.anims.create({
             key: 'blood',
@@ -468,6 +468,7 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1
         });
         this.idle.play('idle');
+        this.idle.scale=0.8;
 
         this.idle2 = this.add.sprite(500, 0, 'layer2-').setOrigin(0,0);
         console.log(frames)
@@ -478,6 +479,7 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1
         });
         this.idle2.play('idle2');
+        this.idle2.scale=0.8;
 
         this.idle3 = this.add.sprite(800, 0, 'layer3-').setOrigin(0,0);
         console.log(frames)
@@ -488,6 +490,7 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1
         });
         this.idle3.play('idle3');
+        this.idle3.scale= 0.75;
 
         this.idle4 = this.add.sprite(200, 0, 'layer4-').setOrigin(0,0);
         console.log(frames)
@@ -498,6 +501,7 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1
         });
         this.idle4.play('idle4');
+        this.idle4.scale= 0.5;
 
         /**
          * Renvoie un tableau d'images
@@ -522,6 +526,8 @@ class Tableau1 extends Phaser.Scene{
         this.bg2Container.scrollFactorX=0.2;
         this.bg1Container.scrollFactorX=0.4;
         this.groundContainer.scrollFactorX=1;
+        this.bloodAnimation.scrollFactorX=0;
+
     }
     getFrames(prefix,length) {
         let frames = [];
@@ -530,6 +536,7 @@ class Tableau1 extends Phaser.Scene{
         }
         return frames;
     }
+
     /**
      * Définit ce qui se passe quand on appuie ou relache une touche du clavier
      * ALGO : ceci est une fonction ou méthode
