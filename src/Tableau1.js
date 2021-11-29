@@ -467,7 +467,7 @@ class Tableau1 extends Phaser.Scene{
         });
         this.idle.play('idle');
 
-        this.idle2 = this.add.sprite(0, 0, 'layer2-').setOrigin(0,0);
+        this.idle2 = this.add.sprite(500, 0, 'layer2-').setOrigin(0,0);
         console.log(frames)
         this.anims.create({
             key: 'idle2',
@@ -477,7 +477,7 @@ class Tableau1 extends Phaser.Scene{
         });
         this.idle2.play('idle2');
 
-        this.idle3 = this.add.sprite(0, 0, 'layer3-').setOrigin(0,0);
+        this.idle3 = this.add.sprite(800, 0, 'layer3-').setOrigin(0,0);
         console.log(frames)
         this.anims.create({
             key: 'idle3',
@@ -487,7 +487,7 @@ class Tableau1 extends Phaser.Scene{
         });
         this.idle3.play('idle3');
 
-        this.idle4 = this.add.sprite(0, 0, 'layer4-').setOrigin(0,0);
+        this.idle4 = this.add.sprite(200, 0, 'layer4-').setOrigin(0,0);
         console.log(frames)
         this.anims.create({
             key: 'idle4',
