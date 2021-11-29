@@ -87,7 +87,7 @@ class Tableau1 extends Phaser.Scene{
         }
         //enemyrun
         for (let i=1;i<=8;i++) {
-            this.load.image('layer3-run-' + i, 'assets-characters/enemy-1/PNG/idle/Layer-' + i + '.png');
+            this.load.image('layer3-run-' + i, 'assets-characters/enemy-1/PNG/run/Layer-' + i + '.png');
         }
         //enemy2
         for (let i=1;i<=6;i++) {
@@ -484,7 +484,7 @@ class Tableau1 extends Phaser.Scene{
         });
         this.idle2.play('idle2');
         this.idle2.scale=0.8;
-
+/*
         this.idle3 = this.add.sprite(800, 45, 'layer3-').setOrigin(0,0);
         console.log(frames)
         this.anims.create({
@@ -495,7 +495,7 @@ class Tableau1 extends Phaser.Scene{
         });
         this.idle3.play('idle3');
         this.idle3.scale= 0.75;
-
+*/
         this.oiseau = this.add.sprite(300, 0, 'layer4-1').setOrigin(0,0);
         console.log(frames)
         this.anims.create({
@@ -505,10 +505,21 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1
         });
         this.oiseau.play('idle4');
-        //this.oiseau.scale= 0.5;
+        this.oiseau.scale= 0.5;
+
+        this.enemy1run = this.add.sprite(800, 0, 'layer3-run-').setOrigin(0,0);
+        console.log(frames)
+        this.anims.create({
+            key: 'enemy1run',
+            frames: this.getFrames("layer3-run-",6),
+            frameRate: 12,
+            repeat: -1
+        });
+        this.enemy1run.play('enemy1run');
+        this.enemy1run.scale= 0.8;
 
         this.tweens.add({
-            targets: this.idle3,
+            targets: this.enemy1run,
             x: 900,
             duration: 3000,
             ease: 'Linear',
