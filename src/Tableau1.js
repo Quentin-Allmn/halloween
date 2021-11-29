@@ -434,7 +434,7 @@ class Tableau1 extends Phaser.Scene{
          */
 
 
-        this. = this.add.sprite(0, 0, 'layer').setOrigin(0,0);
+        this.idle= this.add.sprite(0, 0, 'layer').setOrigin(0,0);
         //animation de 3 images
         this.anims.create({
             key: 'idle',
