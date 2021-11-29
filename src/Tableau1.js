@@ -77,6 +77,18 @@ class Tableau1 extends Phaser.Scene{
         for (let i=1;i<=10;i++) {
             this.load.image('layer' + i, 'assets-characters/boy/boy_style_1/PNG/idle/Layer-' + i + '.png');
         }
+        //Charcter2
+        for (let i=1;i<=10;i++) {
+            this.load.image('layer2-' + i, 'assets-characters/boy/boy_style_2/PNG/idle/Layer-' + i + '.png');
+        }
+        //enemy1
+        for (let i=1;i<=10;i++) {
+            this.load.image('layer3-' + i, 'assets-characters/boy/boy_style_1/PNG/idle/Layer-' + i + '.png');
+        }
+        //enemy2
+        for (let i=1;i<=6;i++) {
+            this.load.image('layer4-' + i, 'assets-characters/boy/boy_style_1/PNG/idle/Layer-' + i + '.png');
+        }
     }
 
     /**
@@ -440,15 +452,31 @@ class Tableau1 extends Phaser.Scene{
             key: 'idle',
             frames: [
                 {key:'layer1'},
-                {key:'layer1'},
-                {key:'layer1'},
-                {key:'layer1'},
-                {key:'layer1'},
+                {key:'layer2'},
+                {key:'layer3'},
+                {key:'layer4'},
+                {key:'layer5'},
+                {key:'layer6'},
+                {key:'layer7'},
+                {key:'layer8'},
+                {key:'layer9'},
+                {key:'layer10'},
             ],
             frameRate: 16,
             repeat: -1
         });
-        this.SnowAnimation.play('idle');
+        this.idle.play('idle');
+
+        this.idle2 = this.add.sprite(0, 0, 'layer2-').setOrigin(0,0);
+        console.log(frames)
+        this.anims.create({
+            key: 'idle2',
+            frames: this.getFrames("layer2-",longueur),
+            frameRate: 12,
+            repeat: -1
+        });
+        this.idle.play('idle2');
+
 
 
         /**
