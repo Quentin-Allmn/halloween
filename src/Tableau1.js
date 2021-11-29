@@ -545,10 +545,6 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.scrollFactorX=1;
         this.bloodAnimation.scrollFactorX=0;
         this.SnowAnimation.scrollFactorX=0;
-        /**
-         * Tween enemy 2
-         *
-         */
 
     }
 
@@ -595,7 +591,7 @@ class Tableau1 extends Phaser.Scene{
      */
     update(){
         //déplacement de la caméra
-        this.cameras.main.scrollX+=this.speed; // on aurait pu écrire : this.cameras.main.scrollX= this.cameras.main.scrollX + this.speed;
+        this.cameras.main.scrollX+=this.speed*4; // on aurait pu écrire : this.cameras.main.scrollX= this.cameras.main.scrollX + this.speed;
 
         //petit effet de vibrance sur le filtre film au tout premier plan
         this.filterFilm.setAlpha(Phaser.Math.Between(95,100)/100)
