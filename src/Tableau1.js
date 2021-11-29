@@ -74,8 +74,8 @@ class Tableau1 extends Phaser.Scene{
             this.load.image('filterSnow'+h, 'assets/level/weather/snow/frame'+h+'.png');
         }
         //Charcter
-        for (let t=1;t<=10;t++) {
-            this.load.image('layer' + t, 'assets-characters/boy/boy_style_1/PNG/idle/Layer-' + t + '.png');
+        for (let i=1;i<=10;i++) {
+            this.load.image('layer' + i, 'assets-characters/boy/boy_style_1/PNG/idle/Layer-' + i + '.png');
         }
     }
 
@@ -432,32 +432,37 @@ class Tableau1 extends Phaser.Scene{
          * AnimationIdle1
          * @type {Phaser.GameObjects.Sprite}
          */
-        this.idle = this.add.sprite(0, 0, 'layer').setOrigin(0,0);
-        //animation de idle1
-        console.log(frames)
+
+
+        this. = this.add.sprite(0, 0, 'layer').setOrigin(0,0);
+        //animation de 3 images
         this.anims.create({
-            key: 'animation',
-            frames: this.getFrames("layer",10),
-            frameRate: 12,
+            key: 'idle',
+            frames: [
+                {key:'layer1'},
+                {key:'layer1'},
+                {key:'layer1'},
+                {key:'layer1'},
+                {key:'layer1'},
+            ],
+            frameRate: 16,
             repeat: -1
         });
-        this.idle.play('animation');
+        this.SnowAnimation.play('idle');
+
+
         /**
          * Renvoie un tableau d'images
          * @param prefix
          * @param length
          * @returns {*[]}
          */
-        getFrames(prefix,length)
-        {
-            let frames = [];
-            for (let i = 1; i <= lenght; i++) {
-                frames.push({key: prefix + i});
-            }
-            return frames;
-        }
-        //gestion du parallaxe
 
+        //gestion du parallaxe
+        /**
+         * Vitesse de déplacement du décor
+         * @type {number}
+         */
         this.speed=0;
         //initialise ce qui se passe avec le clavier
         this.initKeyboard();
@@ -469,6 +474,13 @@ class Tableau1 extends Phaser.Scene{
         this.bg2Container.scrollFactorX=0.2;
         this.bg1Container.scrollFactorX=0.4;
         this.groundContainer.scrollFactorX=1;
+    }
+    getFrames(prefix,length) {
+        let frames = [];
+        for (let i = 1; i <= length; i++) {
+            frames.push({key: prefix + i});
+        }
+        return frames;
     }
     /**
      * Définit ce qui se passe quand on appuie ou relache une touche du clavier
