@@ -475,9 +475,27 @@ class Tableau1 extends Phaser.Scene{
             frameRate: 12,
             repeat: -1
         });
-        this.idle.play('idle2');
+        this.idle2.play('idle2');
 
+        this.idle3 = this.add.sprite(0, 0, 'layer3-').setOrigin(0,0);
+        console.log(frames)
+        this.anims.create({
+            key: 'idle3',
+            frames: this.getFrames("layer3-",longueur),
+            frameRate: 12,
+            repeat: -1
+        });
+        this.idle3.play('idle3');
 
+        this.idle4 = this.add.sprite(0, 0, 'layer4-').setOrigin(0,0);
+        console.log(frames)
+        this.anims.create({
+            key: 'idle4',
+            frames: this.getFrames("layer4-",longueur),
+            frameRate: 12,
+            repeat: -1
+        });
+        this.idle4.play('idle4');
 
         /**
          * Renvoie un tableau d'images
