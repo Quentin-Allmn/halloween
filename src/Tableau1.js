@@ -471,7 +471,7 @@ class Tableau1 extends Phaser.Scene{
         console.log(frames)
         this.anims.create({
             key: 'idle2',
-            frames: this.getFrames("layer2-",longueur),
+            frames: this.getFrames("layer2-",10),
             frameRate: 12,
             repeat: -1
         });
@@ -481,7 +481,7 @@ class Tableau1 extends Phaser.Scene{
         console.log(frames)
         this.anims.create({
             key: 'idle3',
-            frames: this.getFrames("layer3-",longueur),
+            frames: this.getFrames("layer3-",10),
             frameRate: 12,
             repeat: -1
         });
@@ -491,7 +491,7 @@ class Tableau1 extends Phaser.Scene{
         console.log(frames)
         this.anims.create({
             key: 'idle4',
-            frames: this.getFrames("layer4-",longueur),
+            frames: this.getFrames("layer4-",6),
             frameRate: 12,
             repeat: -1
         });
@@ -515,7 +515,7 @@ class Tableau1 extends Phaser.Scene{
         // Définit l'espace de déplacement de la caméra
         this.cameras.main.setBounds(0, 0, 1900, 540);
         //définit à quelles vitesse se déplacent nos différents plans
-        this.bgAnimationA.scrollFactorX=0;
+        this.bgAnimation.scrollFactorX=0;
         this.filterFilm.scrollFactorX=0;
         this.bg2Container.scrollFactorX=0.2;
         this.bg1Container.scrollFactorX=0.4;
