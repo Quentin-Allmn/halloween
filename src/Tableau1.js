@@ -81,9 +81,13 @@ class Tableau1 extends Phaser.Scene{
         for (let i=1;i<=10;i++) {
             this.load.image('layer2-' + i, 'assets-characters/boy/boy_style_2/PNG/idle/Layer-' + i + '.png');
         }
-        //enemy1
+        //enemy1idle
         for (let i=1;i<=10;i++) {
             this.load.image('layer3-' + i, 'assets-characters/enemy-1/PNG/idle/Layer-' + i + '.png');
+        }
+        //enemyrun
+        for (let i=1;i<=8;i++) {
+            this.load.image('layer3-run-' + i, 'assets-characters/enemy-1/PNG/idle/Layer-' + i + '.png');
         }
         //enemy2
         for (let i=1;i<=6;i++) {
@@ -427,7 +431,7 @@ class Tableau1 extends Phaser.Scene{
          * SnowAnimation
          * @type {Phaser.GameObjects.Sprite}
          */
-        this.SnowAnimation = this.add.sprite(965, 0, 'filterSnow1').setOrigin(0,0);
+        this.SnowAnimation = this.add.sprite(0, 0, 'filterSnow1').setOrigin(0,0);
         //animation de 3 images
         this.anims.create({
             key: 'snow',
@@ -448,7 +452,7 @@ class Tableau1 extends Phaser.Scene{
          */
 
 
-        this.idle= this.add.sprite(0, 0, 'layer').setOrigin(0,0);
+        this.idle= this.add.sprite(0, 55, 'layer').setOrigin(0,0);
         //animation de 3 images
         this.anims.create({
             key: 'idle',
@@ -470,7 +474,7 @@ class Tableau1 extends Phaser.Scene{
         this.idle.play('idle');
         this.idle.scale=0.8;
 
-        this.idle2 = this.add.sprite(500, 0, 'layer2-').setOrigin(0,0);
+        this.idle2 = this.add.sprite(500, 50, 'layer2-').setOrigin(0,0);
         console.log(frames)
         this.anims.create({
             key: 'idle2',
@@ -481,7 +485,7 @@ class Tableau1 extends Phaser.Scene{
         this.idle2.play('idle2');
         this.idle2.scale=0.8;
 
-        this.idle3 = this.add.sprite(800, 0, 'layer3-').setOrigin(0,0);
+        this.idle3 = this.add.sprite(800, 45, 'layer3-').setOrigin(0,0);
         console.log(frames)
         this.anims.create({
             key: 'idle3',
@@ -492,7 +496,7 @@ class Tableau1 extends Phaser.Scene{
         this.idle3.play('idle3');
         this.idle3.scale= 0.75;
 
-        this.idle4 = this.add.sprite(200, 0, 'layer4-').setOrigin(0,0);
+        this.oiseau = this.add.sprite(300, 0, 'layer4-1').setOrigin(0,0);
         console.log(frames)
         this.anims.create({
             key: 'idle4',
@@ -500,15 +504,28 @@ class Tableau1 extends Phaser.Scene{
             frameRate: 12,
             repeat: -1
         });
-        this.idle4.play('idle4');
-        this.idle4.scale= 0.5;
+        this.oiseau.play('idle4');
+        //this.oiseau.scale= 0.5;
 
-        /**
-         * Renvoie un tableau d'images
-         * @param prefix
-         * @param length
-         * @returns {*[]}
-         */
+        this.tweens.add({
+            targets: this.idle3,
+            x: 900,
+            duration: 3000,
+            ease: 'Linear',
+            yoyo: true,
+            flipX: true,
+            repeat: -1,
+        });
+
+        this.tweens.add({
+            targets: this.oiseau,
+            x: 600,
+            duration: 3000,
+            ease: 'Linear',
+            yoyo: true,
+            flipX: true,
+            repeat: -1,
+        });
 
         //gestion du parallaxe
         /**
@@ -527,8 +544,14 @@ class Tableau1 extends Phaser.Scene{
         this.bg1Container.scrollFactorX=0.4;
         this.groundContainer.scrollFactorX=1;
         this.bloodAnimation.scrollFactorX=0;
+        this.SnowAnimation.scrollFactorX=0;
+        /**
+         * Tween enemy 2
+         *
+         */
 
     }
+
     getFrames(prefix,length) {
         let frames = [];
         for (let i = 1; i <= length; i++) {
@@ -576,6 +599,8 @@ class Tableau1 extends Phaser.Scene{
 
         //petit effet de vibrance sur le filtre film au tout premier plan
         this.filterFilm.setAlpha(Phaser.Math.Between(95,100)/100)
+
+        document.title=this.oiseau.x;
     }
 
 
